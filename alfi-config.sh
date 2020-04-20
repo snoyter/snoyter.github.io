@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="lang">
-<head>
-	<meta charset="charset"/>
-	<title>Alfi-config</title>
-</head>
-<body>
-<per style="word-wrap: break-word; white-space: pre-wrap;">
 #!/bin/bash
 echo "navi" > /etc/hostname
 ln -svf /usr/share/zoneinfo/Asia/Novosibirsk /etc/localtime
@@ -43,7 +35,3 @@ pacman -S xf86-video-intel lib32-intel-dri --noconfirm
 systemctl enable NetworkManager
 
 exit
-
-</per>
-</body>
-</html>

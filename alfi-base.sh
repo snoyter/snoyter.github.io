@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="lang">
-<head>
-	<meta charset="charset"/>
-	<title>Alfi-base</title>
-</head>
-<body>
-<per style="word-wrap: break-word; white-space: pre-wrap;">
 #!/bin/bash
 loadkeys ru
 setfont cyr-sun16
@@ -38,7 +30,4 @@ reflector -c "RU" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
 
 pacstrap /mnt base base-devel linux linux-firmware netctl
 genfstab -pU /mnt >> /mnt/etc/fstab
-arch-chroot /mnt sh -c "$(curl -fsSL https://snoyter.github.io/alfi-config.html)"
-</per>
-</body>
-</html>
+arch-chroot /mnt sh -c "$(curl -fsSL https://snoyter.github.io/alfi-config.sh)"
