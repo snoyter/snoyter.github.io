@@ -11,18 +11,18 @@ echo n; echo; echo; echo; echo +1024M;
 echo n; echo p; echo; echo; 
 echo a; echo 1;
 echo w; 
-) | fdisk /dev/sda
+) | fdisk /dev/nvme0n1
 
-mkfs.ext2  /dev/sda1 -L boot
-mkfs.ext4  /dev/sda2 -L root
-mkswap /dev/sda3 -L swap
-mkfs.ext4  /dev/sda4 -L home
+mkfs.ext2  /dev/nvme0n1p1 -L boot
+mkfs.ext4  /dev/nvme0n1p2 -L root
+mkswap /dev/nvme0n1p3 -L swap
+mkfs.ext4  /dev/nvme0n1p4 -L home
 
-mount /dev/sda2 /mnt
+mount /dev/nvme0n1p2 /mnt
 mkdir /mnt/{boot,home}
-mount /dev/sda1 /mnt/boot
-swapon /dev/sda3
-mount /dev/sda4 /mnt/home
+mount /dev/nvme0n1p1 /mnt/boot
+swapon /dev/nvme0n1p3
+mount /dev/nvme0n1p4 /mnt/home
 
 pacman -Sy reflector --noconfirm
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
