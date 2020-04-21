@@ -15,7 +15,7 @@ echo '127.0.1.1	navi.localdomain navi' >> /etc/hosts
 mkinitcpio -p linux
 
 pacman -Sy grub --noconfirm
-grub-install /dev/sda
+grub-install /dev/nvme0n1
 grub-mkconfig -o /boot/grub/grub.cfg
 pacman -S dialog wpa_supplicant --noconfirm
 
