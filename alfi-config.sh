@@ -32,6 +32,14 @@ pacman -S xorg-server xorg-drivers xorg-xinit --noconfirm
 pacman -S ttf-hack --noconfirm
 pacman -S networkmanager --noconfirm
 pacman -S xf86-video-intel lib32-intel-dri --noconfirm
+pacman -S i3-wm --noconfirm
+
+echo 'exec i3' > ~/.xinitrc
+
+echo "[Service]" > /etc/systemd/system/getty@tty1.service.d/override.conf
+echo "ExecStart=" » /etc/systemd/system/getty@tty1.service.d/override.conf
+echo "ExecStart=-/usr/bin/agetty —autologin snoyter —noclear %I $TERM" » /etc/systemd/system/getty@tty1.service.d/override.conf
+
 systemctl enable NetworkManager
 
 exit
