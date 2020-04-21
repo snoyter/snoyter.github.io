@@ -38,7 +38,11 @@ echo 'exec i3' > /home/snoyter/.xinitrc
 mkdir /etc/systemd/system/getty@tty1.service.d
 echo "[Service]" > /etc/systemd/system/getty@tty1.service.d/override.conf
 echo "ExecStart=" >> /etc/systemd/system/getty@tty1.service.d/override.conf
-echo "ExecStart=-/usr/bin/agetty --autologin snoyter --noclear %I $TERM" >> /etc/systemd/system/getty@tty1.service.d/override.conf
+echo 'ExecStart=-/usr/bin/agetty --autologin snoyter --noclear %I $TERM' >> /etc/systemd/system/getty@tty1.service.d/override.conf
+
+echo 'if [[ "$(tty)" = "/dev/tty1" ]]; then' >> /home/snoyter/.bash_profile
+echo '	exec startx' >> /home/snoyter/.bash_profile
+echo 'fi' >> /home/snoyter/.bash_profile
 
 systemctl enable NetworkManager
 
