@@ -1,60 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
+    <title>Аяпергенов Кирилл</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Резюме Аяпергенова Кирилла">
+    <meta name="author" content="Аяпергенов Кирилл">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img class="photo" src="avatar.jpg" alt="Моё фото">
-    <h1>Аяпергенов Кирилл</h1>
-    <h2>Java Developer</h2>
-    <a href="mailto:snoyter@mail.ru">snoyter@mail.ru</a>
-    Новосибирск, Россия
+  <div class="container">
+    <header class="row">
+      <div class="col-md-12 page-header">
+      <address class="pull-right">
+          <a href="mailto:snoyter@mail.ru">snoyter@mail.ru</a>
+          <br>
+          Новосибирск, Россия
+          <br>
+          <ul class="icon-list list-inline">
+            <li><a href="https://github.com/snoyter"><i class="fa fa-github icon-large"></i></a></li>
+            <li><a href="https://vk.com/k_lermontov"><i class="fa fa-vk icon-large"></i></a></li>
+            <li><a href="https://t.me/snoyter"><i class="fa fa-telegram icon-large"></i></a></li>
+          </ul>
+      </address>
+      <h1>
+        <strong>Аяпергенов Кирилл</strong>
+        <br>
+        <small>Java Developer</small>
+      </h1>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-md-3"><h3>Обо мне</h3></div>
+      <div class="col-md-9">
+        <p>Программирование для меня очень захватывает. Я люблю решать интересные задачи и делать классные проекты. Мне так же нравится изучать всё новое и эксперемтировать. Моё хобби это делать игры. Я пользователь ArchLinux, Linux дистрибутива для продвинутых пользователей.</p>
+      </div>
+    </div>
 
+<hr>
+<div class="row">
+    <div class="col-md-3"><h3>Образование</h3></div>
+    <div class="col-md-9">
+      <p>Студент 4 курса Новосибирского Политехнического Колледжа "НПК" по направлению "Программирование в компьютерных системах"
+      </p>
+    </div>
+  </div>
 
-    <a href="https://github.com/snoyter"><i class="fab fa-github"></i></a>
-    <a href="https://vk.com/k_lermontov"><i class="fab fa-vk"></i></a>
-    <a href="https://t.me/snoyter"><i class="fab fa-telegram"></i></a>
-    <a href="/projects">Мои проекты</a>
+<hr>
+<div class="row">
+    <div class="col-md-3"><h3>Список прочтённых книг</h3></div>
+    <div class="col-md-9">
+      <ul>
+          <strong>Java Core:</strong>
+          <li>Брюс Эккель - Философия Java</li>
+          <li>Герберт Шилд - Java. Полное руководство</li>
+          <li>Джоаш Блох - Java. Эффективное программирование</li>
 
-    
-    <h2>Обо мне</h2>
-    Программирование для меня очень захватывает. Я люблю решать интересные задачи и делать классные проекты.
-    Мне так же нравится изучать всё новое и эксперемтировать.
-    Моё хобби это делать игры.
-    Я пользователь ArchLinux, Linux дистрибутива для продвинутых пользователей.
-	
+          <strong>Spring:</strong>
+          <li>Динеш Раджпут - Spring. Все паттерны проетированния</li>
+          <li>Крейг Уоллс - Spring в действии</li>
+          <li>Адитья Бхаргава - Грокоем алгоритмы</li>
 
-    <h2>Образование</h2>
-    Студент 4 курса Новосибирского Политехнического Колледжа "НПК" по направлению "Программирование в компьютерных системах"
-    <h4>Список прочтённых книг</h4>
-<ul>
-    <h4>Java Core:</h4>
-    <li>Брюс Эккель - Философия Java</li>
-    <li>Герберт Шилд - Java. Полное руководство</li>
-    <li>Джоаш Блох - Java. Эффективное программирование</li>
+          <strong>SQL:</strong>
+          <li>Сейед Тахагхогхи, Хью Е. Вильямс - Руководство по MySQL</li>
+          <li>Крис Ричардсон - Микросервисы. Паттерны разработки и рефакторинга</li>
+      </ul>
+    </div>
+  </div>
 
-    <h4>Spring:</h4>
-    <li>Динеш Раджпут - Spring. Все паттерны проетированния</li>
-    <li>Крейг Уоллс - Spring в действии</li>
-    <li>Адитья Бхаргава - Грокоем алгоритмы</li>
+<hr>
+<div class="row">
+    <div class="col-md-3"><h3>Опыт работы</h3></div>
+    <div class="col-md-9"><p>Проходил практику тестировщиком в Новосибирском Инстетуте Программных Сиситем "НИПС"</p></div>
+  </div>
 
-    <h4>SQL:</h4>
-    <li>Сейед Тахагхогхи, Хью Е. Вильямс - Руководство по MySQL</li>
-<!--    <li>Паттерны объектно-ориентированного проектирования (2020)</li>-->
-    <li>Крис Ричардсон - Микросервисы. Паттерны разработки и рефакторинга</li>
+<hr>
+<div class="row">
+    <div class="col-md-3"><h3>Ожидания от работы</h3></div>
+    <div class="col-md-9"><p>Реализация интересных задач, дружный коллектив. Возможность карьерного роста по мере приобретения опыта.</p>
+    </div>
+  </div>
 
-</ul>
-    <h2>Опыт работы</h2>
-    Проходил практику тестировщиком в Новосибирском Инстетуте Программных Сиситем "НИПС"
+<hr>
+<div class="row">
 
-    <h2>Ожидания от работы</h2>
-    Реализация интересных задач, дружный коллектив. Возможность карьерного роста по мере приобретения опыта.
-
-    <h2>Стек технологий</h2>
-    <ul>
+    <div class="col-md-3"><h3>Стек технологий</h3></div>
+    <div class="col-md-9">
+      <ul>
         <li>Java 8</li>
         <li>Spring</li>
         <li>Hibernate</li>
@@ -64,22 +98,40 @@
         <li>MySQL</li>
         <li>Selenium</li>
         <li>Git</li>
-    </ul>
+      </ul>
+    </div>
+  </div>
 
-    <h2>Навыки Java</h2>
-    <ul>
-        <li>Умение работать с многопоточностью</li>
-        <li>Знание коллекций</li>
-        <li>Stream API</li>
-        <li>IO</li>
-        <li>JUnit</li>
+<hr>
+<div class="row">
 
-    </ul>
+    <div class="col-md-3"><h3>Навыки Java</h3></div>
+    <div class="col-md-9">
+      <ul>
+          <li>Умение работать с многопоточностью</li>
+          <li>Знание коллекций</li>
+          <li>Stream API</li>
+          <li>IO</li>
+          <li>JUnit</li>
+      </ul>
+    </div>
+  </div>
 
-    <h2>Сертификаты</h2>
-    *WorldSkills
-    SoloLearn
-    Техник ЭВМ*
+<hr>
+<div class="row">
 
+    <div class="col-md-3"><h3>Сертификаты</h3></div>
+      <div class="col-md-9">
+        *WorldSkills
+        SoloLearn
+        Техник ЭВМ*
+      </div>
+    </div>
+
+      <hr>
+    <footer class="footer pull-right text-muted">
+      <small> 2020 Аяпергенов Кирилл Романович </small>
+    </footer>
+  </div>
 </body>
 </html>

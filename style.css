@@ -1,16 +1,36 @@
-body{
-	background-color: black;
-	color: white;
+body {
+    background-color: #1f1f1f;
+    line-height: 1.7em;
+    font-size: 16px;
 }
 
-.logo{
-	width: 500px;
+.icon-list {
+    margin-left: 0px;
 }
 
-.center{
-	display: block;
-    text-align: -webkit-center;
+.container {
+    background-color: white;
 }
 
-.navbar{
+address {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+        padding: 25px 50px;
+        margin: 20px auto;
+    }
+}
+
+a i[class^="icon-"],
+a i[class*=" icon-"] {
+    color: black;
+}
+
+a:hover i[class^="icon-"],
+a:hover i[class*=" icon-"] {
+    color: #2a6496;
+    text-decoration: none;
 }
