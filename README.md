@@ -1,1 +1,1 @@
-# snoyter.github.io
+# Сайт-визитка
