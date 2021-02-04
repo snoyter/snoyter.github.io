@@ -4,6 +4,19 @@ body {
     font-size: 16px;
 }
 
+.skills {
+  display: inline-flex;
+  list-style: none;
+}
+.skills-item{
+    display: block;
+    color: #666;
+    background-color: rgba(203,209,211,.3);
+    margin-right: 15px;
+    white-space: nowrap;
+    padding: 0 11px;
+}
+
 .icon-list {
     margin-left: 0px;
 }
